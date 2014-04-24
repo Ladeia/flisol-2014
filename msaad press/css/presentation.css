@@ -1,0 +1,142 @@
+@font-face {
+font-family: opensans;
+src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@keyframes animate-tail {
+    0% {background-position: -6864px 0; }
+    100% {background-position: 0 0;}
+}
+
+
+.generalrules {
+	background: url("../images/bg.png") no-repeat;
+}
+
+.text {
+	font-family: opensans !important; 
+	color: white !important;
+}
+
+.left {
+	width: 350px;
+	height: 500px;
+	float: left;
+}
+
+.right {
+	width: 400px;
+	height: 500px;
+	float: right;
+}
+
+.quemsoueu{
+	line-height: 40px;
+	font-size: 28px;
+}
+
+.foxtail{
+	animation: animate-tail 3.75s steps(44) infinite;
+	background: url('../images/foxtail.png') 0 0 no-repeat;
+	width: 156px;
+	height: 156px;
+	top:254px;
+	left: 348px;
+	position: absolute;
+}
+
+.phone{
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.topleft{
+	width: 375px;
+	height: 250px;
+	float: right;
+	display: inline;
+
+}
+.topright{
+	width: 375px;
+	height: 250px;
+	float: right;
+	display: inline;
+	position: absolute;
+}
+
+.bottom {
+	width: 750px;
+	height: 270px;
+	float: right;
+	margin-top:1px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.animatedslider {
+  animation: slidein 3 3s alternate;
+  font-weight: bold;
+}
+
+
+
+#pseudoelements li:nth-child(even) {
+	color:orange;
+}
+
+#pseudoelements li:nth-child(odd) {
+	color:pink;
+
+}
+
+#pseudoelements li:hover {
+	font-size: 50px;
+}
+
+#example-one {
+  border-radius: 10px;
+  background: #BADA55;
+}
+
+#example-two {
+  border-radius: 10px;
+  border: 3px solid #BADA55;
+}
+
+#example-three {
+  border-radius: 5px 20px 5px;
+  background: #BADA55;
+}
+
+#example-four {
+  border-radius: 10px/30px; /* radius horizontal  / radius vertical  */
+  background: #BADA55;
+}
+
+#example-five {
+  border-radius: 30px/10px; /* radius horizontal  / radius vertical  */
+  background: #BADA55;
+}
+
+.shadow {
+  box-shadow: 1px 2px 1px 10px black;
+}
+
+div[id^='example-'] {
+	margin-right: 30px;
+	width: 100px;
+  	height: 100px;
+  	float: left;
+}
+
+
+
